@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assane Dev</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><span>A</span>ssane</div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <!-- Bouton de menu -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Compétences</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="right">
+        <h1>
+          Salut, je suis
+          <span style="font-weight: bold" class="log">Assane Diaw</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Minus repellendus laboriosam harum, ex illo fugit incidunt. <br />
+          Lorem ipsum dolor sit amet.
+        </p>
+        <div class="button"><a href="#">Télécharger CV</a></div>
+      </div>
+      <div class="left">
+        <img src="./images/img1-removebg-preview.png" alt="" />
+      </div>
+    </section>
+    <!-- Ajout du fichier JavaScript -->
+    <script>
+      document.getElementById('menu-icon').addEventListener('click', function() {
+        var navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
